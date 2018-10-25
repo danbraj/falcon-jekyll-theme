@@ -1,0 +1,15 @@
+
+
+.main {
+    color: $main-font-color;
+}
+
+@include gt600 {
+    .header + .main {
+        margin-left: $side-width;
+    }
+
+    main {
+        min-height: calc(100vh - #{$footer-height});
+    }
+}

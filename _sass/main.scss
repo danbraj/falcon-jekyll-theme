@@ -1,5 +1,22 @@
 
-$main-bg-color: beige;
+
+/* default styles 460px-600px */
+
+@import
+
+    'settings.colors',
+    'settings.global',
+    'tools.mixins',
+
+    'generic.reset',
+    'elements.typography',
+
+    'objects.header',
+    'objects.main',
+    'objects.footer';
+
+
+// temporary
 
 body {
     background: $main-bg-color;

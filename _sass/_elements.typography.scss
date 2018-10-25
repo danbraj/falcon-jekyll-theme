@@ -1,0 +1,20 @@
+
+
+html {
+    font: $prime-font;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    color: $accent-color;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+        color: lighten($accent-color, 15%);
+    }
+
+    // &:visited {
+    //     color: darken($accent-color, 5%);
+    // }
+}

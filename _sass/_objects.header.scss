@@ -1,0 +1,15 @@
+
+
+.header {
+    background: $header-bg-color;
+    color: $header-font-color;
+
+    @include gt600 {
+        float: left;
+        height: 100%;
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        width: $side-width;
+    }
+}
