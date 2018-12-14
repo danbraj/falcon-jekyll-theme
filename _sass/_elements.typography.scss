@@ -2,6 +2,18 @@
 
 html {
     font: $prime-font;
+
+    @include gt900 {
+        font-size: 22px;
+    }
+
+    @include gt1200 {
+        font-size: 26px;
+    }
+}
+
+body {
+    background: $main-bg-color;
 }
 
 a {

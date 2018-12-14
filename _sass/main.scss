@@ -1,23 +1,17 @@
 
 
-/* default styles 460px-600px */
+// default styles 460px-600px
 
 @import
-
-    'settings.colors',
+    // settings
     'settings.global',
     'tools.mixins',
-
+    // base
     'generic.reset',
     'elements.typography',
-
+    'components.toc',
+    // components
     'objects.header',
     'objects.main',
-    'objects.footer';
-
-
-// temporary
-
-body {
-    background: $main-bg-color;
-}
+    'objects.footer',
+    'utils.modifiers';

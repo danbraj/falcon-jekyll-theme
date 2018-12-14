@@ -1,6 +1,19 @@
 
 
+// colors
+
+$header-font-color  : #fff !default;
+$header-bg-color    : #000 !default;
+$main-font-color    : #330 !default;
+$main-bg-color      : #efefef !default;
+$footer-bg-color    : darken($main-bg-color, 3%) !default;
+$accent-color       : #E08A1E !default;
+$nav-overlay-color  : #fff !default;
+
+
+// other
+
 $side-width         : 300px !default;
 $footer-height      : 80px !default;
 $main-ff            : Helvetica, sans-serif !default;
-$prime-font         : normal 400 26px/1.5 $main-ff !default;
+$prime-font         : normal 400 18px/1.5 $main-ff !default;

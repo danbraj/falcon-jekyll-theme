@@ -1,0 +1,44 @@
+
+
+#markdown-toc {
+
+    font-weight: 300;
+    font-size: .8em;
+    list-style-type: decimal;
+    
+    ul, ol {
+        margin: 0
+    }
+    
+    li {
+        //list-style: decimal;
+        margin-left: 20px;
+    }
+
+    ol {
+        list-style-type: circle;//lower-latin;
+    }
+
+    @include gt900 {
+        font-size: 16px;
+        float: right;
+        margin: 0 0 20px 16px;
+        padding: 10px;
+        border: 1px solid;
+        box-sizing: border-box;
+        width: 400px;
+    }
+
+    @media (min-width: 2100px) {
+        font-size: 18px;
+        position: absolute;
+        text-align: left;
+        left: 100%;
+        float: none;
+        width: calc(100% - 1200px + 330px);
+        border: 0;
+        border-left: 1px solid #cacaca;
+        margin: 0;
+        padding: 20px 10px 20px 20px;
+    }
+}
