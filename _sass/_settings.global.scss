@@ -3,17 +3,27 @@
 // colors
 
 $header-font-color  : #fff !default;
-$header-bg-color    : #000 !default;
 $main-font-color    : #330 !default;
+$title-font-color   : #555 !default;
+$accent-color       : #E08A1E !default;
+
+$header-bg-color    : #000 !default;
 $main-bg-color      : #efefef !default;
 $footer-bg-color    : darken($main-bg-color, 3%) !default;
-$accent-color       : #E08A1E !default;
+
 $nav-overlay-color  : #fff !default;
 
 
 // other
 
-$side-width         : 300px !default;
-$footer-height      : 80px !default;
 $main-ff            : Helvetica, sans-serif !default;
 $prime-font         : normal 400 18px/1.5 $main-ff !default;
+$side-width         : 300px !default;
+$footer-height      : 80px !default;
+$thanks-for-printing: 'Dziękuję pięknie za wydrukowanie materiału ze strony [website]';
+
+
+// plugins
+
+$sh-accent-color    : lighten($accent-color, 33%) !default;
+$sh-bg-color        : lighten($accent-color, 45%) !default;

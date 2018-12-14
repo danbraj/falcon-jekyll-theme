@@ -1,0 +1,28 @@
+/* print styles */
+
+@import 'settings.global';
+
+// TODO: style page for printing
+
+.header {
+    background: none !important;
+}
+
+.page-navigation, footer {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main:after {
+    display: block;
+    content: $thanks-for-printing;
+    color: #888;
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 30px;
+}

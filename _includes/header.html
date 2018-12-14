@@ -1,13 +1,22 @@
-{% capture image %} style="background-image: url(res/{{ page.bg-image }});"{% endcapture %}
+{% capture image %} style="background-image: url(assets/{{ page.bg-image }});"{% endcapture %}
 
 <div class="header"{% if page.bg-image %}{{ image }}{% endif %}>
     
     {% include title.html %}
 
-    {% if site.nav %}
+    {% if site.nav or site.github.is_project_page %}
     <nav class="page-navigation">
-        {% comment %}<h2>Nawigacja</h2>{% endcomment %}
+        {% comment %}<h2>Navigation</h2>{% endcomment %}
         <ul{% if site.nav-overlay %}{{ ' class="overlay"' }}{% endif %}> 
+            {% if site.github.is_project_page %}
+            <li><a href="{{ site.github.repository_url }}">View on GitHub</a></li>
+            {% if site.github.releases != '' %} {% assign release = site.github.releases.first %}
+            <li><a href="{{ release.zipball_url }}">Download .zip</a></li>
+            <li><a href="{{ release.tarball_url }}">Download .tar.gz</a></li>
+            {% for asset in release.assets %}
+            <li><a href="{{ asset.browser_download_url }}">{{ asset.name | remove_first: ".jar" }}</a></li>
+            {% endfor %} {% endif %}
+            {% endif %}
             {% for nav-item in site.nav %}
             <li><a href="{{ nav-item.url }}">{{ nav-item.title }}</a></li>
             {% endfor %}

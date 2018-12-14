@@ -1,7 +1,7 @@
 <div>
     {% if page.title %}
-    <span class="header__title">Falcon</span>
+    <span class="header__title">{{ site.title | site.github.repository_name | default: 'Falcon theme' }}</span>
     {% else %}
-    <h1 class="header__title">Falcon</h1>
+    <h1 class="header__title">{{ site.title | site.github.repository_name | default: 'Falcon theme' }}</h1>
     {% endif %}
 </div>
