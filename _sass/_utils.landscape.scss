@@ -1,0 +1,31 @@
+
+
+@media (orientation: landscape) and (max-height: 600px) {
+
+    .header__title {
+        padding-top: 5%;
+    }
+
+    @media (min-width: 800px) {
+        .header {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .header {
+            nav {
+                width: 76%;
+            }
+        }
+        .page-navigation {
+            ul {
+                display: flex;
+                flex-flow: column;
+                flex-wrap: wrap;
+                height: 150px;
+            }
+        }
+    }
+    
+}
