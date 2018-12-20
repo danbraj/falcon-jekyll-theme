@@ -1,6 +1,6 @@
-{% capture image %} style="background-image: url(assets/{{ page.bg-image }});"{% endcapture %}
+{% capture image %} style="background-image: url(assets/{{ page.bg-image | default: site.default-bg-image }});"{% endcapture %}
 
-<div class="header"{% if page.bg-image %}{{ image }}{% endif %}>
+<div class="header"{% if page.bg-image or site.default-bg-image %}{{ image }}{% endif %}>
     
     {% include title.html %}
 
