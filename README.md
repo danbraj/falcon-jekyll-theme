@@ -1,41 +1,46 @@
 # falcon-jekyll-theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
-
+A simple and responsive theme for Jekyll or github-pages.
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
+### Jekyll
 
-```ruby
-gem "falcon-jekyll-theme"
-```
+TODO:
 
-And add this line to your Jekyll site's `_config.yml`:
+### GitHub-Pages
+
+Add this line to your github-pages site's `_config.yml`:
 
 ```yaml
-theme: falcon-jekyll-theme
+remote_theme: danbraj/falcon-jekyll-theme
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install falcon-jekyll-theme
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+### Configuration variables
+
+#### `_config.yml`
+
+```yaml
+title: [The title of the site]
+lang: [The language of the site]
+
+default-bg-image: [Path to the image on the left]
+nav: # fields of navigation
+  - title: [value of a tag]
+    url: [href attribute of a tag]
+  - title: [...]
+    url: [...]
+
+# good idea to do
+kramdown: 
+  toc_levels: '2,3'
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/danbraj/falcon-jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
